@@ -1,5 +1,4 @@
-using AzureComboBoxApi.DbContext;
-using AzureComboBoxApi.Models;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
@@ -11,9 +10,9 @@ namespace AzureComboBoxApi.Controllers
     [Route("Product")]
     public class ProductController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ComboboxicContext _context;
 
-        public ProductController(ApplicationDbContext context)
+        public ProductController(ComboboxicContext context)
         {
             _context = context;
         }
@@ -35,6 +34,6 @@ namespace AzureComboBoxApi.Controllers
             return Ok(products);
         }
 
-        
+
     }
 }

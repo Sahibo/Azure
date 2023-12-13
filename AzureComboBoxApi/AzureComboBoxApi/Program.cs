@@ -1,9 +1,10 @@
-using AzureComboBoxApi.DbContext;
+//using AzureComboBoxApi.DbContext;
+using AzureComboBoxApi;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<ComboboxicContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
@@ -23,10 +24,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors(builder =>
 {
-    builder.AllowAnyOrigin()  // Allow requests from any origin
-        .AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowCredentials();
+	builder.AllowAnyOrigin()  // Allow requests from any origin
+		.AllowAnyHeader()
+		.AllowAnyMethod();
+	// Do not use .AllowCredentials() when using AllowAnyOrigin()
 });
 
 app.UseHttpsRedirection();

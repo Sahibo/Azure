@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sahib\\source\\repos\\ASP\\AzureComboBoxApi\\AzureComboBoxApi\\AzureComboBoxApi.csproj": {}
+    "C:\\Users\\sahib\\source\\repos\\ASP\\Azure\\ComboBoxHW\\AzureComboBoxApi\\AzureComboBoxApi\\AzureComboBoxApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sahib\\source\\repos\\ASP\\AzureComboBoxApi\\AzureComboBoxApi\\AzureComboBoxApi.csproj": {
+    "C:\\Users\\sahib\\source\\repos\\ASP\\Azure\\ComboBoxHW\\AzureComboBoxApi\\AzureComboBoxApi\\AzureComboBoxApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sahib\\source\\repos\\ASP\\AzureComboBoxApi\\AzureComboBoxApi\\AzureComboBoxApi.csproj",
+        "projectUniqueName": "C:\\Users\\sahib\\source\\repos\\ASP\\Azure\\ComboBoxHW\\AzureComboBoxApi\\AzureComboBoxApi\\AzureComboBoxApi.csproj",
         "projectName": "AzureComboBoxApi",
-        "projectPath": "C:\\Users\\sahib\\source\\repos\\ASP\\AzureComboBoxApi\\AzureComboBoxApi\\AzureComboBoxApi.csproj",
+        "projectPath": "C:\\Users\\sahib\\source\\repos\\ASP\\Azure\\ComboBoxHW\\AzureComboBoxApi\\AzureComboBoxApi\\AzureComboBoxApi.csproj",
         "packagesPath": "C:\\Users\\sahib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sahib\\source\\repos\\ASP\\AzureComboBoxApi\\AzureComboBoxApi\\obj\\",
+        "outputPath": "C:\\Users\\sahib\\source\\repos\\ASP\\Azure\\ComboBoxHW\\AzureComboBoxApi\\AzureComboBoxApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,6 +58,12 @@
               "version": "[7.0.14, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.14, )"
             },
