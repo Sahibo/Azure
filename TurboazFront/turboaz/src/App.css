@@ -1,0 +1,69 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* CarsList.css */
+.list-container {
+  padding: 20px;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.car-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden; /* Ensure the card content does not overflow */
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+.car-card img {
+  max-width: 400px;
+  max-height: 200px;
+  height: auto;
+}
+
+/* CarDetails.css */
+.CarDetails {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1000;
+  max-width: 80%; /* Limit the maximum width of the details */
+}
+
+.CarDetails img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px; /* Add some spacing below the image */
+}
+
+.CarDetails button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.CarDetails button:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+/* Add more styling as needed */
